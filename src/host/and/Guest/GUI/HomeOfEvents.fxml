@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="host.and.Guest.Controller.HomeOfEventsController">
+   <children>
+        <ImageView fitHeight="612.0" fitWidth="800.0" layoutX="-2.0">
+            <image>
+                <Image url="@../photo/backgroundOns.jpg" />
+            </image>
+        </ImageView>
+      <Label alignment="CENTER" layoutX="223.0" layoutY="28.0" prefHeight="62.0" prefWidth="380.0" text="Event List" textAlignment="CENTER" textFill="#335599">
+         <font>
+            <Font name="Aharoni Bold" size="46.0" />
+         </font>
+      </Label>
+   
+     
+      <JFXButton fx:id="ajouter" layoutX="47.0" layoutY="538.0" onAction="#ajouterEvenementButton" text="Ajouter" textFill="#993f34">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <TableView fx:id="tab" layoutX="-73.0" layoutY="137.0" prefHeight="411.0" prefWidth="715.0">
+        <columns>
+          <TableColumn fx:id="tabHotel" prefWidth="132.0" text="Hotel" />
+          <TableColumn fx:id="tabTicket" prefWidth="111.0" text="nombre ticket" />
+            <TableColumn fx:id="tabNomEvent" prefWidth="172.0" text="Nom Evenement" />
+            <TableColumn fx:id="tabDate" prefWidth="119.0" text="Date" />
+            <TableColumn fx:id="TabPrix" minWidth="0.0" prefWidth="90.0" text="Prix" />
+            <TableColumn fx:id="tabIdEvent" prefWidth="90.0" text="IdEvent" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="349.0" layoutY="538.0" onAction="#ModifierEvenementButton" text="Modifier" textAlignment="CENTER" textFill="#995934">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="642.0" layoutY="538.0" onAction="#supprimerEvenementButton" text="Supprimer" textAlignment="CENTER" textFill="#995034">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txt_recherche" layoutX="479.0" layoutY="78.0" onKeyReleased="#SearchEvent" promptText="Rechercher" />
+      <JFXButton fx:id="affiche" layoutX="34.0" layoutY="32.0" onAction="#ModifierEvenementButton" prefHeight="52.0" prefWidth="103.0" text="AFFICHER" textFill="#1c1cbc" textOverrun="CENTER_ELLIPSIS" />
+   </children>
+</AnchorPane>

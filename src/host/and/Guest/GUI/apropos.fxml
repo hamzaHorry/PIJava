@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="593.0" prefWidth="819.0" style="-fx-background-color: #d2e4ff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="host.and.Guest.Controller.AproposController">
+   <children>
+      <ImageView fitHeight="593.0" fitWidth="800.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.3;">
+         <image>
+            <Image url="@../photo/Heart_of_Experience_Title_Screen.png" />
+         </image>
+      </ImageView>
+      <Text fill="#4b566f" layoutX="139.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Getting to know a destination through personal and unique experiences is something increasingly demanded. Visitors to Host And Guest seek not only a business trip, but also to immerse themselves in the destination and experience all that is not found in their home." wrappingWidth="607.595703125">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <MediaView fx:id="media" fitHeight="300.0" fitWidth="500.0" layoutX="150.0" layoutY="244.0" />
+      <ImageView fitHeight="171.0" fitWidth="122.0" layoutX="14.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/kablam-welcome.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="retourButton" fitHeight="74.0" fitWidth="54.0" layoutX="36.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/ic-retour-bbs-2_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

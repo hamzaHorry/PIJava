@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="host.and.Guest.Controller.AjoutEventController">
+   <children>
+      <JFXTextField fx:id="prix" layoutX="560.0" layoutY="270.0" prefWidth="160.0" />
+      <JFXTextField fx:id="nomEvent" layoutX="560.0" layoutY="120.0" prefHeight="25.0" prefWidth="160.0" />
+      <JFXTextField fx:id="nbrTicket" layoutX="560.0" layoutY="320.0" prefWidth="160.0" />
+      <JFXDatePicker fx:id="date" defaultColor="#335599" layoutX="560.0" layoutY="170.0" />
+      <JFXComboBox fx:id="hotel" layoutX="560.0" layoutY="220.0" prefHeight="25.0" prefWidth="160.0" />
+      <Pane layoutX="35.0" layoutY="120.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="237.0" fitWidth="249.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </Pane>
+      <JFXButton fx:id="upload" layoutX="65.0" layoutY="375.0" onAction="#uploadImageButton" text="Upload image" textAlignment="CENTER" textFill="#335599">
+         <font>
+            <Font size="25.0" />
+         </font></JFXButton>
+      <Label layoutX="350.0" layoutY="230.0" text="Hotel" textFill="#335599">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="350.0" layoutY="130.0" text="Nom Evenement: " textFill="#335599">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="353.0" layoutY="280.0" text="Prix" textFill="#335599">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="350.0" layoutY="180.0" text="Date" textFill="#335599">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="350.0" layoutY="330.0" text="nombre tickets: " textFill="#335599">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <JFXButton fx:id="ajouter" layoutX="299.0" layoutY="507.0" onAction="#ajouterEvenementButton" prefHeight="42.0" prefWidth="127.0" text="Ajouter" textFill="#335599">
+         <font>
+            <Font size="24.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

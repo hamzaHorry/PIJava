@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.lynden.gmapsfx.GoogleMapView?>
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="802.0" style="-fx-background-color: A2DED0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controller.AjouterMaisonController">
+   <children>
+      <Pane id="AnchorPane" fx:id="BoutonValider" layoutX="3.0" layoutY="3.0" prefHeight="526.0" prefWidth="936.0" style="-fx-background-color: A2DED0;" styleClass="background" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+         <children>
+            <Label layoutX="190.0" layoutY="105.0" prefHeight="17.0" prefWidth="80.0" text="Titre*" textFill="#10100f">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <Label layoutX="189.0" layoutY="153.0" text="Adresse *" textFill="#10100f">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <TextField id="nomText" fx:id="nom" layoutX="303.0" layoutY="83.0" prefHeight="43.0" prefWidth="267.0" />
+             
+        <GoogleMapView fx:id="mapView" prefHeight="480.0" prefWidth="152.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0.0" />
+         <TextField id="prenomText" fx:id="adresse" layoutX="303.0" layoutY="136.0" onAction="#addressTextFieldAction" prefHeight="43.0" prefWidth="267.0" />
+                   
+         <TextField id="prenomText" fx:id="prix" layoutX="303.0" layoutY="191.0" prefHeight="43.0" prefWidth="267.0" />
+            <Label layoutX="190.0" layoutY="212.0" text="Prix *" textFill="#10100f">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <TextField fx:id="jourprix" layoutX="303.0" layoutY="246.0" prefHeight="43.0" prefWidth="267.0" />
+            <TextField fx:id="numbrechambre" layoutX="304.0" layoutY="312.0" prefHeight="43.0" prefWidth="267.0" />
+            <Label layoutX="189.0" layoutY="263.0" text="Prix Par Jour *" textFill="#10100f">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <Label layoutX="185.0" layoutY="323.0" prefHeight="22.0" prefWidth="152.0" text="N des chambres *" textFill="#10100f">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
+            <ImageView fx:id="imageView" fitHeight="182.0" fitWidth="211.0" layoutX="590.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/picture.png" />
+               </image></ImageView>
+            <Button layoutX="613.0" layoutY="263.0" mnemonicParsing="false" onAction="#choisirPhoto" opacity="0.0" prefHeight="77.0" prefWidth="137.0" style="-fx-background-color: #3ae4b9;" />
+            <TextField fx:id="test" layoutX="569.0" layoutY="372.0" prefHeight="27.0" prefWidth="37.0" />
+            <ImageView fitHeight="49.0" fitWidth="49.0" layoutX="657.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/cloud-computing%20(1).png" />
+               </image>
+            </ImageView>
+            <Label graphicTextGap="0.0" layoutX="241.0" layoutY="14.0" prefHeight="55.0" prefWidth="416.0" text="Ajouter les informations du votre Maison " underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button id="valider" fx:id="btn_ajouter" alignment="BASELINE_LEFT" layoutX="374.0" layoutY="379.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="137.0" style="-fx-background-color: #446CB3;" text="AJOUTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="43.0" fitWidth="89.0" layoutX="462.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/plus.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="retour" alignment="BASELINE_LEFT" layoutX="156.0" layoutY="9.0" mnemonicParsing="false" opacity="0.0" prefHeight="65.0" prefWidth="80.0" style="-fx-background-color: #3ae4b9;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="43.0" fitWidth="56.0" layoutX="179.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/left-arrow%20(1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="show" layoutX="685.0" layoutY="419.0" mnemonicParsing="false" opacity="0.0" prefHeight="65.0" prefWidth="114.0" />
+            <ImageView fitHeight="65.0" fitWidth="72.0" layoutX="723.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/show-menu-button.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="151.0" layoutY="437.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

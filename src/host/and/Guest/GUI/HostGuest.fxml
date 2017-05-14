@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="802.0" style="-fx-background-color: #cccccc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controller.HostGuestController">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="813.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bgg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="GHM" layoutX="341.0" layoutY="60.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="336.0" style="-fx-background-color: #3ae4b9;" text="Gestion Des Maisons &amp; Des Hotels" textFill="#676768">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="274.0" layoutY="135.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="403.0" style="-fx-background-color: #3ae4b9;" text="Gestion Des Evenements" textFill="#676768" />
+      <Button layoutX="219.0" layoutY="203.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="458.0" style="-fx-background-color: #3ae4b9;" text="Gestion Des Experiences" textFill="#676768" />
+      <Button layoutX="138.0" layoutY="269.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="542.0" style="-fx-background-color: #3ae4b9;" text="Gestion Des Promotions" textFill="#676768" />
+      <ImageView fitHeight="61.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="741.0" layoutY="397.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/user.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

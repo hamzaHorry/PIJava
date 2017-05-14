@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="802.0" style="-fx-background-color: #cccccc; -fx-opacity: 0.9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controller.AccueilController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="514.0" prefWidth="803.0">
+         <children>
+            <ImageView fitHeight="517.0" fitWidth="803.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/maison.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_addh" alignment="BOTTOM_CENTER" contentDisplay="CENTER" graphicTextGap="8.0" layoutX="63.0" layoutY="410.0" mnemonicParsing="false" opacity="0.7" prefHeight="77.0" prefWidth="262.0" style="-fx-background-color: #3ae4b9;" text="Mes  Hotels" textFill="#676768d1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="57.0" fitWidth="91.0" layoutX="723.0" layoutY="459.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="673.0" layoutY="464.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/user.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_add" alignment="BOTTOM_CENTER" contentDisplay="CENTER" graphicTextGap="8.0" layoutX="325.0" layoutY="410.0" mnemonicParsing="false" opacity="0.7" prefHeight="77.0" prefWidth="262.0" style="-fx-background-color: #3ae4b9;" text="Mes  Maisons" textFill="#676768d1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="V_RESIZE" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="793.0" prefWidth="928.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="host.and.Guest.Controller.aceuilController">
+   <children>
+      <Pane layoutX="80.0" layoutY="228.0" prefHeight="436.0" prefWidth="537.0">
+         <children>
+            <JFXButton fx:id="addButton" alignment="BOTTOM_CENTER" layoutX="250.0" layoutY="236.0" prefHeight="157.0" prefWidth="210.0" style="-fx-background-color: #009688; -fx-opacity: 0.6;" text="add experience" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="95.0" fitWidth="109.0" layoutX="308.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photo/hiker.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="495.0" fitWidth="928.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.7;">
+         <image>
+            <Image url="@../photo/o-HAPPY-MOUNTAIN-facebook.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="DisplayButton" alignment="BOTTOM_CENTER" layoutX="330.0" layoutY="307.0" prefHeight="157.0" prefWidth="210.0" style="-fx-background-color: #009688; -fx-opacity: 0.6;" text="see my experiences" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ButtonBar layoutX="533.0" layoutY="397.0" prefHeight="40.0" prefWidth="200.0" />
+      <ImageView fitHeight="117.0" fitWidth="140.0" layoutX="374.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/sunbed.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
